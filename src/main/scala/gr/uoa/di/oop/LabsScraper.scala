@@ -65,8 +65,8 @@ object LabsScraper {
 
     allocations.zipWithIndex.foreach {
       case (allocation, labId) =>
-        val allocated = allocation.take(50)
-        val requestChange = allocation.drop(50)
+        val allocated = allocation.take(Properties.limit)
+        val requestChange = allocation.drop(Properties.limit)
         exportAllocation(labId + 1, allocated, requestChange)
     }
   }
