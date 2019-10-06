@@ -54,7 +54,7 @@ object LabsScraper {
           val doc = browser.get(s"https://lists.di.uoa.gr/showthread.php?t=$threadId&pp=50&page=$page")
           val regs = doc >> elementList("a.bigusername") map { _ >> allText }
           if (page == 1)
-            soFar ++ regs tail  // the first post of the first page is always by spyro
+            soFar ++ regs tail  // the first post of the first page is always by spyros
           else
             soFar ++ regs
       }
