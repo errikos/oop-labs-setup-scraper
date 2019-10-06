@@ -1,3 +1,5 @@
+package gr.uoa.di.oop
+
 import scala.io.Source
 
 object Properties {

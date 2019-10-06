@@ -1,16 +1,18 @@
-import java.io.File
+package gr.uoa.di.oop
 
 import scala.language.postfixOps
+
 import java.security.SecureRandom
 import java.security.cert.X509Certificate
 
 import javax.net.ssl.{HttpsURLConnection, SSLContext, TrustManager, X509TrustManager}
 import net.ruippeixotog.scalascraper.browser.JsoupBrowser
+
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.dsl.DSL.Extract._
 import net.ruippeixotog.scalascraper.dsl.DSL.Parse._
 
-object Scrapper {
+object LabsScraper {
   def setupTLS(): Unit = {
     val sslContext = SSLContext.getInstance("TLS")
     sslContext.init(null, Array[TrustManager](

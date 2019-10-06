@@ -1,3 +1,5 @@
+package gr.uoa.di.oop
+
 import scala.language.postfixOps
 
 class Registrations(val registrationList: Seq[Seq[String]]) {
