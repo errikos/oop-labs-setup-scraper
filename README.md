@@ -5,7 +5,7 @@ Simple scraper to allocate students in the OOP course labs @ UoA
 Edit the [`src/main/resources/oop-labs.properties`](https://github.com/errikos/oop-labs-setup-scraper/blob/master/src/main/resources/oop-labs.properties) file.
 
 # How to run
-The simplest way is to download the latest release and run:
+The simplest way is to download the latest [release](https://github.com/errikos/oop-labs-setup-scraper/releases) and run:
 ```
 scala oop-labs-setup-scraper-X.Y.jar
 ```
