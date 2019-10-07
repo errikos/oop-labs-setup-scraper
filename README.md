@@ -11,7 +11,7 @@ scala oop-labs-setup-scraper-X.Y.jar
 ```
 or
 ```
-java oop-labs-setup-scraper-X.Y.jar
+java -jar oop-labs-setup-scraper-X.Y.jar
 ```
 
 Alternatively, clone the repository, `cd` to the project root and with [sbt](https://www.scala-sbt.org/):
